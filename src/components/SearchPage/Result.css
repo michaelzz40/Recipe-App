@@ -1,0 +1,147 @@
+.search-result {
+    position: relative;
+    min-height: 320vh;
+}
+
+.results {
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.unit {
+    font-size: 0.4rem;
+}
+
+.results .card {
+    border-radius: 10px;
+    width: 300px;
+    height: 550px;
+    margin: 10px;
+    box-shadow: 0 0 2px rgba(0, 0, 0, 0.3);
+    display: flex;
+    padding: 15px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.results img {
+    width: 270px;
+    height: 250px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+
+}
+
+.results .card h2 {
+    color: #7c7c7c;
+    margin: 5px 0px;
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+.card .health-labels {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    width: 100%;
+}
+
+.card .health-labels .labels {
+    text-align: center;
+    font-size: 0.6rem;
+    width: 80px;
+    height: 20px;
+    margin: 20px 5px 20px 0px;
+    padding: 3px;
+    border-radius: 20px;
+    box-shadow: 0 0 0px 1px rgba(113, 201, 206, 0.8);
+    color: #7C7C7C;
+
+}
+
+
+
+.results div.no-diet {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    height: 60px;
+    width: 100%;
+}
+
+.results div.no-diet p {
+    font-size: 1.2rem;
+    font-weight: 400;
+    color: #7c7c7c;
+}
+
+.results .card .calories {
+    display: inline-block;
+    color: #7c7c7c;
+    margin: 5px 0px;
+}
+
+
+.results .card .calories-number {
+    margin-left: auto;
+}
+
+.results .info {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.results .calories-info {
+    display: inline;
+    color: #333;
+    margin-left: auto;
+}
+
+.results .recipe-detail {
+    align-self: center;
+    width: 100%;
+    text-decoration: none;
+    margin: 20px 0px;
+    padding: 5px;
+    color: #FFF;
+    background-color: rgba(113, 201, 206, 0.8);
+    text-align: center;
+    height: 75px;
+    border-radius: 20px;
+    transition: 0.3s;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+.results .recipe-detail:hover {
+    color: rgba(113, 201, 206, 0.8);
+    background-color: #FFF;
+    box-shadow: 0 0 15px rgba(113, 201, 206, 0.8)
+}
+
+
+
+@media(max-width:720px) {
+    .search-result {
+        min-height: 920vh;
+    }
+}
+
+@media(max-width:1200px) and (min-width: 801px) {
+    .search-result {
+        min-height: 470vh;
+    }
+}
+
+@media(max-width:800px) and (min-width: 721px) {
+    .search-result {
+        min-height: 930vh;
+    }
+}

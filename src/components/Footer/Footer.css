@@ -1,0 +1,41 @@
+.footer {
+    position: relative;
+    height: 180px;
+    background-color: #71c9ce;
+    width: 100%;
+}
+
+.copyright-items {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    flex-direction: column;
+    color: #F4F4F4;
+}
+
+.copyright-items .copyright {
+    text-align: center;
+    font-size: 0.6rem;
+    font-weight: 400;
+
+}
+
+.copyright-items .copyright .copyright-text {
+    padding: 25px;
+}
+
+.copyright-items .social {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.copyright-items .social img {
+    max-width: 50px;
+    filter: invert(1);
+    max-height: 50px;
+    padding: 10px;
+    margin: 0px 10px;
+}
