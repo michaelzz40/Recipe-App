@@ -25,7 +25,7 @@ const SearchPage = () => {
       try {
         setLoading(true);
         const res = await axios.get(
-          `https://api.edamam.com/search?q=${query}&app_id=0506938d&app_key=fdaf3c8a72e5c2f9b76d9312c99e969a&from=${firstIndex}&to=${lastIndex}`
+          `https://api.edamam.com/search?q=${query}&app_id=${process.env.REACT_APP_ID}&app_key=${process.env.REACT_APP_KEY}&from=${firstIndex}&to=${lastIndex}`
         );
         setRecipe(res.data);
         setLoading(false);
@@ -47,7 +47,7 @@ const SearchPage = () => {
     try {
       setLoading(true);
       const res = await axios.get(
-        `https://api.edamam.com/search?q=${query}&app_id=0506938d&app_key=fdaf3c8a72e5c2f9b76d9312c99e969a&from=${firstIndex}&to=${lastIndex}`
+        `https://api.edamam.com/search?q=${query}&app_id=${process.env.REACT_APP_ID}&app_key=${process.env.REACT_APP_KEY}&from=${firstIndex}&to=${lastIndex}`
       );
       setRecipe(res.data);
       setLoading(false);
