@@ -10,8 +10,7 @@ const SearchPage = () => {
   const [recipe, setRecipe] = useState();
   const [loading, setLoading] = useState(true);
   const [page, setPage] = useState(1);
-  const [perPage, setPerPage] = useState(12);
-  const [show, setShow] = useState(false);
+  const [perPage] = useState(12);
 
   const lastIndex = perPage * page;
   const firstIndex = lastIndex - perPage;
@@ -59,10 +58,6 @@ const SearchPage = () => {
 
   const paginate = page => {
     setPage(page);
-  };
-
-  const showHandler = () => {
-    setShow(prevShow => !prevShow);
   };
 
   return (

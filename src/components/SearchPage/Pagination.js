@@ -19,7 +19,7 @@ const Pagination = ({ perPage, total, paginate, page }) => {
             >
               <a
                 onClick={() => paginate(number)}
-                href='#'
+                href='!#'
                 className='page-link'
               >
                 {number}

@@ -2,7 +2,7 @@ import React from "react";
 import "./Footer.css";
 import facebook from "../../img/facebook.png";
 import instagram from "../../img/instagram.png";
-import twitter from "../../img/twitter.png";
+import github from "../../img/github.png";
 
 const Footer = () => {
   return (
@@ -15,10 +15,12 @@ const Footer = () => {
           <a href='https://www.facebook.com/michaelzz/'>
             <img src={facebook} alt='' />
           </a>
-          <a href='https://www.facebook.com/michaelzz/'>
+          <a href='https://www.instagram.com/michaelzz40/'>
             <img src={instagram} alt='' />
           </a>
-          <img src={twitter} alt='' />
+          <a href='https://github.com/michaelzz40'>
+            <img src={github} alt='' />
+          </a>
         </div>
       </div>
     </section>

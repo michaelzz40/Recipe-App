@@ -1,7 +1,6 @@
-import React, { Fragment, useState } from "react";
+import React, { Fragment } from "react";
 import "./Result.css";
 import ResultItem from "./ResultItem";
-import { Link } from "react-router-dom";
 
 const Result = props => {
   return (
